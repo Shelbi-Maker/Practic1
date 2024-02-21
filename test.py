@@ -5,18 +5,19 @@ from app import square
 class TestSquareFunction(unittest.TestCase):
 
     def test_positive_number(self):
-        self.assertEqual(square(2), 4)  
+        self.assertEqual(square(2), 4)
 
     def test_negative_number(self):
-        self.assertEqual(square(-3), 9)  
+        self.assertEqual(square(-3), 9)
 
     def test_zero(self):
-        self.assertEqual(square(0), 0)  
+        self.assertEqual(square(0), 0)
+        
     def test_large_number(self):
-        self.assertEqual(square(1000), 1000000) 
-
+        self.assertEqual(square(1000), 1000000)
+        
     def test_fractional_number(self):
-        self.assertEqual(square(2.5), 6.25)  
+        self.assertEqual(square(2.5), 6.25)
 
 if __name__ == "__main__":
     unittest.main()
