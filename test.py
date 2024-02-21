@@ -1,5 +1,4 @@
 # Импортируем функцию, которую мы хотим протестировать
-import unittest
 from app import square
 
 
