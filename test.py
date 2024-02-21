@@ -1,5 +1,5 @@
 # Импортируем функцию, которую мы хотим протестировать
-from your_module import square
+from app import square
 
 
 # Тесты для функции square
