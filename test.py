@@ -21,5 +21,3 @@ def test_square_zero():
 def test_square_fraction():
     # Проверяем, что квадрат дробного числа вычисляется правильно
     assert square(2.5) == 6.25
-
-
