@@ -3,21 +3,21 @@ from app import square
 
 
 # Тесты для функции square
-def test_square_positive():
+def test_square_0():
     # Проверяем, что квадрат положительного числа вычисляется правильно
     assert square(2) == 4
 
 
-def test_square_negative():
+def test_square_1():
     # Проверяем, что квадрат отрицательного числа вычисляется правильно
     assert square(-3) == 9
 
 
-def test_square_zero():
+def test_square_2():
     # Проверяем, что квадрат нуля равен нулю
     assert square(0) == 0
 
 
-def test_square_fraction():
+def test_square_3():
     # Проверяем, что квадрат дробного числа вычисляется правильно
     assert square(2.5) == 6.25
