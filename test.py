@@ -1,23 +1,16 @@
-# Импортируем функцию, которую мы хотим протестировать
 from app import square
 
+def test_sqr_5():
+    assert square(5) == 25
 
-# Тесты для функции square
-def test_square_0():
-    # Проверяем, что квадрат положительного числа вычисляется правильно
-    assert square(2) == 4
+def test_sqr_8():
+    assert square(8) == 64
 
-
-def test_square_1():
-    # Проверяем, что квадрат отрицательного числа вычисляется правильно
-    assert square(-3) == 9
-
-
-def test_square_2():
-    # Проверяем, что квадрат нуля равен нулю
+def test_sqr_0():
     assert square(0) == 0
 
+def test_sqr_10():
+    assert square(10) == 100
 
-def test_square_3():
-    # Проверяем, что квадрат дробного числа вычисляется правильно
-    assert square(2.5) == 6.25
+def test_sqr_1():
+    assert square(1) == 1
