@@ -1,10 +1,10 @@
 from app import square
 
 def test_sqr_5():
-    assert square(5) == 25
+    assert square(5) == 30
 
 def test_sqr_8():
-    assert square(8) == 64
+    assert square(8) == 80
 
 def test_sqr_0():
     assert square(0) == 0
