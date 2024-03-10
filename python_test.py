@@ -17,5 +17,4 @@ class TestSquare(unittest.TestCase):
     def test_sqr_1(self):
         self.assertEqual(square(1), 1)
 
-if __name == '__main':
     unittest.main()
