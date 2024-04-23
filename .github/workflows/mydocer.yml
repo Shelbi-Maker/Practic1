@@ -1,8 +1,9 @@
 name: Docker Build and Push
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -19,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t jcrover/weather-app:latest .
+      run: docker build -t your_docker_username/weather-app:latest .
 
     - name: Push Docker image
-      run: docker push jcrover/weather-app:latest
+      run: docker push your_docker_username/weather-app:latest
